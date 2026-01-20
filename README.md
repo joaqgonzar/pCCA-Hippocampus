@@ -1,12 +1,42 @@
 # pCCA-Hippocampus
 Codes and Examples to apply partial canonical correlation analysis (pCCA) on neuronal population recordings. 
-Papers applying this code: (doi:XXX; doi:YYY).
+Papers applying this code: (doi:10.64898/2025.12.31.697203).
 
-Two jupyter notebooks are provided showing: 1) pCCA on a Poission spiking network, 2) pCCA on real spiking data collected from CA3-CA1-RSC areas during novel maze learning on mice. 
-The example recording can be downloaded from: 
-https://drive.google.com/file/d/1_bjB-ayoXiEEWIXPXC-S85_pmSjBUJ99/view?usp=drive_link
+Examples \& Tutorials:
+Three  notebooks are provided showing: 1) how to access hippocampal-neocortical DANDI set, 2) pCCA on a Poission spiking network (colab notebook), 3) pCCA on real spiking data collected from CA3-CA1-RSC areas during novel maze learning on mice (jupyter notebook to be run locally).
+All recordings can be downloaded from: 
+https://dandiarchive.org/dandiset/001695/draft
 
-pCCA is implemented as a scikit-learn object. If no third recording is provided, then regular CCA is computed.   
+Installation
+```
+pip install partial_CCA
+```
+Quick Start
+The PartialCCA class follows the standard scikit-learn API (fit, transform, score).
+
+Usage in Python:
+```
+import numpy as np
+from partial_CCA import PartialCCA
+
+# Generate dummy data: 100 samples, 20 neurons in X, 15 in Y, 5 in Z
+X = np.random.randn(100, 20)
+Y = np.random.randn(100, 15)
+Z = np.random.randn(100, 5)
+
+# Initialize and fit the model
+model = PartialCCA()
+model.fit(X, Y, Z)
+
+# Transform data into canonical components
+proj_x, proj_y = model.transform(X, Y)
+
+# Get canonical correlations
+print(model.canonical_correlations_)
+```
+Features:
+If no variable Z is provided, the model automatically defaults to standard Canonical Correlation Analysis (CCA).
+Statistical Validation: Includes a surrogate\_test method that uses circular shifting to calculate p-values for the observed correlations.
 
 Joaquin Gonzalez (https://scholar.google.com/citations?user=rcGEkDgAAAAJ&hl=en).
 Postdoc, Buzsaki Lab (https://buzsakilab.com/wp/) and Chen Lab (https://cn3laboratory.org/pi.html).

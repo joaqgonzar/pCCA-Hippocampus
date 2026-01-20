@@ -3,7 +3,12 @@ Codes and Examples to apply partial canonical correlation analysis (pCCA) on neu
 Papers applying this code: (doi:10.64898/2025.12.31.697203).
 
 Examples \& Tutorials:
-Four  notebooks are provided showing: 1) how to load data from the hippocampal-neocortical DANDI set on a local machine; 2) how to load data from the hippocampal-neocortical DANDI set on a colab notebook straight from DANDI server; 3) how to run pCCA on a simple Poisson spiking network (colab notebook); 4) how to run pCCA on real spiking data collected from CA3-CA1-RSC areas during novel maze learning on mice (jupyter notebook to be run locally).
+Four  notebooks are provided showing: 
+1) How to load data from the hippocampal-neocortical DANDI set on a local machine;
+2) How to load data from the hippocampal-neocortical DANDI set on a colab notebook straight from DANDI server;
+3) How to run pCCA on a simple Poisson spiking network (colab notebook);
+4) how to run pCCA on real spiking data collected from CA3-CA1-RSC areas during novel maze learning on mice (jupyter notebook to be run locally).
+   
 All recordings can be downloaded from: 
 https://dandiarchive.org/dandiset/001695/draft
 

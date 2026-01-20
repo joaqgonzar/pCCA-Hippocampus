@@ -3,6 +3,7 @@ Codes and Examples to apply partial canonical correlation analysis (pCCA) on neu
 Papers applying this code: (doi:10.64898/2025.12.31.697203).
 
 Examples \& Tutorials:
+
 Four  notebooks are provided showing: 
 1) How to load data from the hippocampal-neocortical DANDI set on a local machine;
 2) How to load data from the hippocampal-neocortical DANDI set on a colab notebook straight from DANDI server;

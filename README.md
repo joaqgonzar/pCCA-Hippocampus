@@ -11,7 +11,7 @@ Four  notebooks are provided showing:
 4) how to run pCCA on real spiking data collected from CA3-CA1-RSC areas during novel maze learning on mice (jupyter notebook to be run locally).
    
 All recordings can be downloaded from: 
-https://dandiarchive.org/dandiset/001695/draft
+https://dandiarchive.org/dandiset/001695
 
 Installation
 ```

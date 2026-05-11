@@ -1,6 +1,6 @@
 # pCCA-Hippocampus
 Codes and Examples to apply partial canonical correlation analysis (pCCA) on neuronal population recordings. 
-Papers applying this code: (doi:10.64898/2025.12.31.697203).
+Papers applying this code: (doi:[10.64898/2025.12.31.697203](https://doi.org/10.1038/s41586-026-10481-z)).
 
 Examples \& Tutorials:
 
